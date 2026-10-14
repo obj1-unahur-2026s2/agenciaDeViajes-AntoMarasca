@@ -1,0 +1,17 @@
+import agenciaDeViajes.*
+
+describe "Testeo de viajes" {
+    const pack1 = new Nacional (provinciaDeDestino = "San Luis", duracionEnDias = 7, coordinadorACargo = guia, precioBase = 50000)
+    const pack2 = new Nacional (provinciaDeDestino = "Corrientes", duracionEnDias= 9, coordinadorACargo = guia, precioBase = 80000)
+    const pack3 = new Internacional (paisDeDestino = "Brasil", cantidadDeEscalas = 0, esDeInteres = true, duracionEnDias = 12, coordinadorACargo = acompaniante, precioBase = 120000)
+    const ben1 = new BeneficioEspecial (tipo = "Traslados privados" )
+
+
+    test "Calcular el valor final de un pack" {
+        assert.equals(50000, pack1.valorFinal())
+        assert.equals ()
+    }
+
+
+
+}
